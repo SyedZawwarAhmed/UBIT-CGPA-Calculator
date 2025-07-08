@@ -3,6 +3,9 @@ import csv
 
 def calculate_cgpa(marks):
     total_subjects = len(marks)
+    if total_subjects == 0:
+        return 0.0
+        
     cgpa = 0
     for mark in marks:
         if mark >= 85:
@@ -37,11 +40,27 @@ filename = "marksheet.csv"
 
 with open(filename, "r") as csvfile:
     reader = csv.reader(csvfile)
-    next(reader)
+    next(reader)  # Skip header row
     marks = []
+    total_subjects = 0
+    subjects_with_marks = 0
+    
     for row in reader:
-        mark = float(row[1])
-        marks.append(mark)
-cgpa = calculate_cgpa(marks)
+        total_subjects += 1
+        # Check if row has at least 2 columns and the mark is not empty
+        if len(row) >= 2 and row[1].strip():
+            try:
+                mark = float(row[1].strip())
+                marks.append(mark)
+                subjects_with_marks += 1
+            except ValueError:
+                # Skip invalid marks (non-numeric values)
+                print(f"Warning: Invalid mark '{row[1]}' for subject '{row[0]}' - skipping")
+                continue
 
-print(f"CGPA: {cgpa}")
+if marks:
+    cgpa = calculate_cgpa(marks)
+    print(f"CGPA: {cgpa}")
+    print(f"Calculated from {subjects_with_marks} subjects out of {total_subjects} total subjects")
+else:
+    print("No valid marks found in the CSV file. Please add your marks to calculate CGPA.")

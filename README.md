@@ -1,10 +1,10 @@
 # UBIT CGPA Calculator 📊
 
-A simple and automated CGPA (Cumulative Grade Point Average) calculator specifically designed for **University of Balochistan Institute of Technology (UBIT) Computer Science Department** students.
+A simple and automated CGPA (Cumulative Grade Point Average) calculator specifically designed for **University of Karachi UBIT Computer Science Department** students.
 
 ## 🎯 Overview
 
-This tool helps UBIT CS students calculate their CGPA based on the university's grading scale. You can use it locally on your computer or automatically through GitHub Actions whenever you update your marks.
+This tool helps UBIT CS students calculate their CGPA based on the university's grading scale. You can use it locally on your computer or automatically through GitHub Actions (recommended) whenever you update your marks.
 
 ## 📈 UBIT Grading Scale
 
@@ -101,27 +101,6 @@ The `marksheet.csv` file contains all CS subjects from UBIT curriculum. Here's h
 ### Complete Subject List (UBIT CS Curriculum)
 
 The CSV includes all subjects from the 8-semester CS program:
-
-**Semester 1-2 Foundation:**
-
-- Introduction to Computer Science I & II
-- Mathematics I & II
-- Statistics I & II
-- Physics I & II
-- English I & II
-- Islamiat, Pakistan Studies, Urdu
-
-**Core CS Subjects:**
-
-- Digital Computing and Design Fundamentals
-- Assembly Language
-- Object Oriented Programming
-- Data Structures
-- Software Engineering and Project Management
-- Computer Architecture and Organization
-- Database Management Systems
-- Operating Systems
-- And many more...
 
 ### How to Fill Your Marks
 
