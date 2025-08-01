@@ -38,7 +38,7 @@ The calculator uses the following grading scale:
 1. **Clone or Download this repository:**
 
    ```bash
-   git clone https://github.com/zawwar-ahmed/UBIT-CGPA-Calculator.git
+   git clone https://github.com/SyedZawwarAhmed/UBIT-CGPA-Calculator.git
    cd UBIT-CGPA-Calculator
    ```
 
