@@ -6,9 +6,9 @@ A simple and automated CGPA (Cumulative Grade Point Average) calculator specific
 
 This tool helps UBIT CS students calculate their CGPA based on the university's grading scale. You can use it locally on your computer or automatically through GitHub Actions (recommended) whenever you update your marks.
 
-## 📈 UBIT Grading Scale
+## 📈 Grading Scale
 
-The calculator uses the official UBIT grading scale:
+The calculator uses the following grading scale:
 
 | Marks Range | Grade | GPA Points |
 | ----------- | ----- | ---------- |
